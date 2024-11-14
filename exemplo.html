@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Arte de Reciclar</title>
+</head>
+<style>
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    header{
+        flex-direction: row;
+        justify-content:space-around;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    img{
+        width: 100px;
+        float:left;
+        } 
+    .elemento{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 3px;
+        }
+    .elemento:hover{
+        color: rgb(4, 124, 4);
+        text-decoration:none;
+        font-weight: bold;
+        font-style: italic;
+        background-color: #b5f0c0;
+        } 
+    .art{
+        font-size: 20px;
+        text-align: left;
+        color: rgba(8, 165, 8, 0.767);
+        margin-left: -55px;
+        font-family:initial;
+        font-weight: bolder;
+        font-style: oblique;
+        }
+    .titulo{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        padding-left: 250px;
+        padding-top: 480px;
+        }
+    .img_lixo{
+        width: 60%;
+        height: 30%;
+        padding-left: 280px;
+        padding-top: 30px;
+        }
+    .intro{
+        width: 900px;
+        font-size: 23px;
+        font-weight: normal;
+        padding-left: 250px;
+        }
+    .subt_verde{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        color: rgb(22, 136, 7);
+        padding-left: 250px;
+        }
+    .img_lixo2{
+        width: 30%;
+        height: 30%;
+        padding-left: 250px;
+        }
+    .intro2{
+        width: 490px;
+        font-size: 22px;
+        font-weight: normal;
+        padding-left: 670px;
+        }
+    .subt2_verde{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(22, 136, 7);
+        padding-left: 250px;
+        }
+    .lista{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width: 490px;
+        font-size: 18px;
+        font-weight: normal;
+        padding-left: 690px;
+        }
+    .subt3{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(22, 136, 7);
+        padding-left: 670px;
+        }
+    .intro3{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 490px;
+        font-size: 24px;
+        font-weight: normal;
+        padding-left: 670px;
+        }
+    .img_lixo3{
+        width: 30%;
+        height: 30%;
+        padding-left: 250px;
+        }
+    .fonte{
+        font-size: 14px;
+        padding-left: 670px;
+        width: 510px;
+    }
+    .fonte2{
+        font-size: 14px;
+        padding-left: 670px;
+        width: 510px;
+        padding-top: 30px; 
+    }
+    .fonte3{
+        padding-left: 250px;
+        font-size: 12px;
+    }
+    .subt4{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(7, 9, 136);
+        padding-left: 250px;
+        }
+    .subt5{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(7, 9, 136);
+        padding-left: 670px;
+        }
+    .subt_vermelho{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(189, 7, 7);
+        padding-left: 250px;
+    }
+    .subt_vermelho2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(189, 7, 7);
+        padding-left: 670px;
+        }
+    .subt_marrom{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(70, 39, 5);
+        padding-left: 670px;
+    }
+    .subt2_marrom{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(70, 39, 5);
+        padding-left: 250px;
+    }
+    .subt_azul{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(34, 7, 189);
+        padding-left: 250px;
+        }
+    .subt2_azul{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        color: rgb(34, 7, 189);
+        padding-left: 250px;
+    }
+    .lista2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width: 490px;
+        font-size: 18px;
+        font-weight: normal;
+        padding-left: 260px;
+        }
+    .intro4{
+        width: 900px;
+        font-size: 23px;
+        font-weight: normal;
+        padding-left: 250px;
+        }
+    .yt{
+        padding-left: 250px;
+    }
+    .topo{
+        text-decoration: none;
+        background-color: rgb(43, 92, 3);
+        color: antiquewhite;
+        padding: 20px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        box-shadow: 3px 3px 10px #b5f0c0;
+        border-radius: 50px;
+        }
+    .art_baixo{
+        font-size: 30px;
+        padding-left: 900px;
+        color: rgba(6, 167, 6, 0.767);
+        font-family:initial;
+        font-weight: bolder;
+        font-style: oblique;
+        padding-top: 50px;
+        }   
+    .imagem{
+        padding-left: 870px;
+        max-width: 80px;
+        padding-top: 20px;
+        }
+    .baixo{
+        justify-content:space-around;
+        box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+        }
+    @media (max-width: 450px) {
+        .elemento{
+            margin: 1px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 1px;
+            padding: 2px;
+        }
+        .art{
+            padding: 28px;
+            font-size: 0px;
+            color: rgba(6, 167, 6, 0.767);
+        }
+        .elemento:hover{
+            font-size: 16px;
+            color: rgb(4, 124, 4);
+            text-decoration:none;
+            font-weight: bold;
+            font-style: italic;
+            background-color: #b5f0c0;
+        }
+        .titulo{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            padding-left: 0%;
+            padding-top: 50%;
+            text-align:center;
+            }
+        .img_lixo{
+            width: 80%;
+            height: 30%;
+            padding-left: 10%;
+            padding-top: 30px;
+        }
+        .intro{
+            width: 85%;
+            font-size: 19px;
+            font-weight: normal;
+            padding-left: 10%;
+        }
+        .subt2_verde{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            color: rgb(22, 136, 7);
+            padding-left: 10%;
+        }
+        .subt_verde{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            color: rgb(22, 136, 7);
+            padding-left: 10%;
+            }
+        .img_lixo2{
+            width: 80%;
+            height: 30%;
+            padding-left: 12%;
+            }
+        .intro2{
+            padding-top: 60%;
+            width: 85%;
+            font-size: 17px;
+            font-weight: normal;
+            padding-left: 10%;
+            }
+        .subt3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            color: rgb(22, 136, 7);
+            padding-left: 7%;
+            text-align: center;
+            }
+        .lista{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 80%;
+            font-size: 18px;
+            font-weight: normal;
+            padding-left: 17%;
+            padding-top: 82%;
+            }
+        .intro3{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 85%;
+            font-size: 20px;
+            font-weight: normal;
+            padding-left: 10%;
+            }
+        .img_lixo3{
+            width: 30%;
+            height: 30%;
+            padding-left: 10%;
+            padding: 10px;
+            }
+        .fonte{
+            font-size: 10px;
+            padding-left: 10%;
+            width: 90%;
+        }
+        .subt_vermelho{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(189, 7, 7);
+            padding-left: 10%;
+            text-align: center;
+        }
+        .subt_vermelho2{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(189, 7, 7);
+            padding-left: 10%;
+        }
+        .fonte2{
+            font-size: 10px;
+            padding-left: 10%;
+            width: 90%;
+        }
+        .subt_marrom{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(70, 39, 5);
+            padding-left: 10%;
+        }
+        .subt2_marrom{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(70, 39, 5);
+            padding-left: 10%;
+            text-align: center;
+        }
+        .fonte3{
+            font-size: 10px;
+            padding-left: 10%;
+            width: 90%;
+        }
+        .subt_azul{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(34, 7, 189);
+            padding-left: 10%;
+            text-align: center;
+            }
+        .subt2_azul{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(34, 7, 189);
+            padding-left: 10%;
+        }
+        .lista2{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 80%;
+            font-size: 18px;
+            font-weight: normal;
+            padding-left: 14%;
+            }
+        .intro4{
+            width: 80%;
+            font-size: 21px;
+            font-weight: normal;
+            padding-left: 10%;
+            }
+        .yt{
+            padding-left: 10%;
+            width:80%
+        }
+        .intro4{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 85%;
+            font-size: 20px;
+            font-weight: normal;
+            padding-left: 10%;
+            }
+        .img_lixo3{
+            width: 80%;
+            height: 30%;
+            padding-left: 12%;
+            }
+        .art_baixo{
+            font-size: 20px;
+            padding-left: 0px;
+            color: rgba(6, 167, 6, 0.767);
+            padding-top: 20px;
+            }   
+        .imagem{
+            padding-left: 0px;
+            max-width: 80px;
+            padding-top: 0px;
+            }
+        .baixo{
+            justify-content:space-around;
+            box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+            }
+    }
+
+    </style>
+<body>
+    <header>
+        <a class="topo" href="#"> &#9650;</a>
+        <a href="index.html">
+            <img src="images.jpg">
+        </a>
+        <div class="conteiner">
+            <h1 class="art">ARTE DE RECICLAR</h1>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="como.html">como reciclar</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="porq.html">por que reciclar?</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="lista.html">lista de materiais reciclaveis</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="exemplo.html">ideias criativas</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="element" <h1> </h1> </a>
+                <br><br><br>
+        </div>
+    </header>
+
+    <img class="img_lixo" src="artesanato.jpg" >
+
+    <h1 class="titulo">
+        5 Ideias de Decoração com Reciclagem
+    </h1>
+        
+    <p class="intro">
+        Aqui você vai descobrir maneiras fantásticas de fazer decoração com reciclagem. Trouxemos ideias simples, mas que dão um show!
+        <br><br>
+        Com objetos feitos à mão você pode melhorar o visual da sua casa inteira, desde o jardim, até o quarto, cozinha, sala e banheiro. Sendo assim, mostraremos aqui vários artesanatos simples, todos feitos com materiais recicláveis, tais como: latas, garrafas de vidro, caixotes e papelão.
+    </p>
+    
+    <h5 class="subt_verde">
+        1) Vaso com Vidro Reciclado
+    </h5>
+
+    <img class="img_lixo2" src="luminária.jpg" >
+    <p class="intro2">
+        Vamos te mostrar como fazer uma luminária pendente artesanal! O legal é que esse artesanato reciclado pode ser utilizado em vários ambientes.
+        <br><br>
+        Essas luminárias são super indicadas como decoração para casamento, ou seja, esta é uma ótima dica para as noivinhas que não abrem de uma decoração linda, diferenciada e claro, econômica. Você deseja aprender como se faz esse belo artigo de decoração? Então bora lá conferir a lista de materiais.
+    </p>
+    <h5 class="subt2_verde">
+        Materiais Necessários:
+    </h5>
+
+    <img class="img_lixo2" src="luminária2.jpg" >
+
+    <ul class="lista">
+        <li>Pote de vidro com tampa</li>
+        <li>kit para luminária pendente</li>
+        <li>Lâmpada</li>
+        <li>Martelo</li>
+        <li>Prego</li>
+        <li>Tinta em Spray</li>
+    </ul>
+
+    <h5 class="subt3">
+        Como Fazer Luminária com Potes de Vidro
+    </h5>
+
+    <p class="intro3">
+        1 - Marque na tampa do frasco o tamanho da boquilha da lâmpada. Com o martelo, faça furos bem em cima dessa marcação. O objetivo aqui é fazer abrir espaço para abrigar a boquilha da luminária.
+    </p>
+
+    <img class="img_lixo3" src="luminaria3.jpg" >
+
+    <p class="intro3">
+        2 - Depois de retirar o círculo, encaixe a boquilha conforme mostrado na foto. Nesse momento você pode tampar qualquer fresta que tenha ficado usando a massa durepoxi. Dependendo do modelo do kit que for utilizar, você pode usar até mesmo um pouco de cola instantânea para evitar que as peças se soltem.
+        <br><br>
+        3 - Proteja o fio elétrico com uma fita crepe e pinte o restante com tinta spray na cor desejada.
+        <br><br>
+        4 - Por último, encaixe a tampa no pote.
+        <br><br>
+        E já está pronta a sua luminária feita com pote de vidro reciclado! Ela fica incrível em qualquer ambiente, por isso fará sucesso na sua decoração.
+    </p>
+    <p class="fonte"> Créditos pelo tutorial - https://www.artesanato.com/blog/luminaria-pendente-artesanal/
+        Crédito das fotos: http://woonblog.typepad.com/woonblog/2012/10/diy-bokaallamp.html
+    </p>
+
+    <h5 class="subt_vermelho">
+        2) Relógio de parede feito com colheres de plástico reutilizadas
+    </h5>
+    <img class="img_lixo2" src="relogio.jpg" >
+    <p class="intro2">
+        Você fez uma festinha em casa e tem várias colheres de plástico que não terão outro destino a não ser o lixo? Pois então, antes que você as jogue fora por achar que elas não têm mais nenhuma utilidade, nós vamos te mostrar como você pode fazer um belo trabalho manual utilizando milhares de colheres que antes teriam um destino bastante maléfico para o meio ambiente. 
+        <br><br>
+        Trata-se de uma relógio com moldura estilizada com colheres de plástico, um trabalho tão surpreendente que nem dá para acreditar que foi feito com um material que é sempre jogado fora. Essa ideia apaixonante é só uma das milhares de coisas que você pode fazer com esse item, já que reutilizar materiais recicláveis nunca sai de moda.
+    </p>
+    <h5 class="subt_vermelho2">
+        Materiais Necessários:
+    </h5>
+
+    <img class="img_lixo2" src="relogio2.jpg" >
+
+    <ul class="lista">
+        <li>Colheres de plástico</li>
+        <li>Tesoura e estilete</li>
+        <li>Cola quente</li>
+        <li>1/2 metro de espuma fina</li>
+        <li>Relógio de parede</li>
+        <li>Parafuso e chave de fenda</li>
+        <li>Tinta spray</li>
+        <li>Papel</li>
+        <li>Fita adesiva</li>
+        <li>Arame</li>
+
+    </ul>
+
+    <h5 class="subt_vermelho2">
+        Como fazer o relógio de parede reciclado
+    </h5>
+
+    <p class="intro3">
+        1 - Com o estilete, corte um círculo de isopor com um raio de pelo menos 18 cm. Para um melhor resultado, utilize uma espuma mais maciça e fina.
+    </p>
+
+    <img class="img_lixo3" src="relogio3.jpg" >
+
+
+    <p class="intro3">
+        2 - Coloque o relógio em cima do círculo de espuma e trace com lápis, para que você saiba o espaço que será utilizado pelo relógio.
+        <br><br>
+        3 - Na parte central da espuma, faça o seguinte: a) um retângulo no meio de acordo com as medidas do relógio, para que você possa trocar de pilhas sempre que precisar; b) o círculo na parte superior para pendurar o relógio; c) dois furos laterais (posição 3hrs e 21hrs do relógio). Esses furos serão utilizados para prender o relógio no isopor.
+    </p>
+    <img class="img_lixo3" src="relogio4.jpg" >
+
+    <p class="intro3">
+        4 - Corte o cabo das colheres com a ajuda da tesoura e cole-as com cola quente ao redor da marcação do relógio, feita anteriormente. Comece de fora para dentro e vá circulando toda a extensão do isopor. A cola quente é ótima, pois seca rapidamente e não influencia no acabamento desse projeto.
+        <br><br>
+        5 - Cubra o relógio com papel e fita adesiva e pinte com a tinta spray que você escolheu. Não se esqueça de proteger a sua superfície de trabalho. Em seguida, pinte também a moldura com colheres de plástico e espere secar completamente.
+    </p>
+
+    <img class="img_lixo3" src="relogio5.jpg" >
+
+    <p class="intro3">
+        6 - Prenda o relógio com arame nos buracos que você fez no passo 3 (letra C) e cole com cola quente na superfície do isopor. Por fim, prenda o relógio na parede com parafuso.
+        <br><br>
+        Esse passo a passo é ótimo para decorar sua casa com estilo e reutilizar um material que antes seria jogado fora.
+    </p>
+
+    <p class="fonte2"> Créditos pelo tutorial - https://www.revistaartesanato.com.br/relogio-de-parede-feito-com-colheres-de-plastico-reutilizadas//
+        <br>
+        Crédito das fotos: http://www.thatswhatchesaid.net/2012/chrysanthemum-clock/
+    </p>
+
+    <h5 class="subt2_marrom">
+        3) Estante alternativa feita com caixotes de madeira
+    </h5>
+
+    <img class="img_lixo2" src="caixote.jpg" >
+    <p class="intro2">
+        Você está precisando de uma estante na sua sala para organizar seus objetos de decoração ou simplesmente deseja dar uma repaginada no visual da sua casa? Pois saiba que você pode ter objetos reutilizáveis em casa que vão te ajudar a resolver esse problema. E não precisa ser nenhum gênio ou artista para fazer o que vamos propor a seguir, basta fazer o projeto com carinho e dedicação para que você renove a aparência da sua casa. Vamos ensinar como fazer uma linda estante com caixotes de madeira, que podem ser personalizados da maneira que você quiser.
+    </p>
+    <h5 class="subt2_marrom">
+        Materiais Necessários:
+    </h5>
+
+    <img class="img_lixo2" src="caixote2.jpg" >
+
+    <ul class="lista">
+        <li>Caixotes de madeira</li>
+        <li>Papel de parede</li>
+        <li>Tinta acrílica</li>
+        <li>Papel</li>
+        <li>Pincel</li>
+        <li>Cola branca extra</li>
+        <li>Lixa</li>
+        <li>Papel toalha</li>
+        <li>Ganchos</li>
+    </ul>
+
+    <h5 class="subt_marrom">
+        Como fazer a estante com caixotes de madeira
+    </h5>
+
+    <p class="intro3">
+        1 - Passe a lixa nos caixotes para limpar e deixá-los bem lisos. Em seguida, passe tinta acrílica branca para fazer a base e assim que secar completamente, passe uma camada de outra cor que preferir. Aguarde a secagem total.
+    </p>
+
+    <img class="img_lixo3" src="caixote.jpg" >
+
+
+    <p class="intro3">
+        2 - Corte o papel de parede do tamanho do fundo da caixa e cole-o com a cola branca. Passe o papel toalha por cima para eliminar bolhas e para que ele fique bem esticado.
+        <br><br>
+        3 - Repita os passos acima com quantos caixotes quiser e pendure-os com ganchos de quadro de pintura na parede. Invista não só no design e na disposição dos caixotes, como também nos objetos que serão expostos.
+    </p>
+    <p class="fonte3"> Créditos pelo tutorial - https://www.revistaartesanato.com.br/relogio-de-parede-feito-com-colheres-de-plastico-reutilizadas//
+        <br>
+        Crédito das fotos: http://theplungeproject.com/diy-recycled-wine-crate-shelves
+    </p>
+
+    <h5 class="subt_azul">
+        4) Porta Recados Magnético Feito Com Caixa de Leite e Tecido
+    </h5>
+
+    <img class="img_lixo2" src="porta_recados.jpg" >
+    <p class="intro2">
+        Ideal para a porta da geladeira e muito útil em escritórios. De quebra você ainda vai aprender a fazer imãs de outros modelos, mas todos combinando. 
+        <br><br>
+        Em resumo, dá pra fazer peças muito lindas com a técnica que ele vai ensinar. Então fique por dentro dos materiais que iremos utilizar…
+    </p>
+    <h5 class="subt2_azul">
+        Materiais Necessários:
+    </h5>
+
+    <img class="img_lixo2" src="porta_recados2.jpg" >
+
+    <ul class="lista">
+        <br>
+        <li>Caixa de leite trtra pack</li>
+        <li>Cola quente</li>
+        <li>Cola branca extra</li>
+        <li>Pincel ou rolinho para espalhar a cola</li>
+        <li>Régua</li>
+        <li>Caneta para tecido</li>
+        <li>Tecido comum</li>
+        <li>Tecido impermeabilizado</li>
+        <li>Imã</li>
+        <li>Tesoura</li>
+        <br>
+        <br>
+    </ul>
+    <h5 class="subt2_azul">
+        Dicas:
+    </h5>
+    <ul class="lista2">
+        <li>Você pode impermeabilizar o tecido em casa mesmo, com a termolina caseira, por exemplo.</li>
+        <li>Os imãs devem ser utilizados de acordo com a necessidade.</li>
+        <li>A cola quente é indispensável para a colagem dos imãs.</li>
+        <li>Com essa ideia você pode fazer imãs de formatos variados, ficam lindos!</li>
+        <li>Utilize as sobras da caixinha para fazer peças menores, como corações.</li>
+        <li>Faça porta recados e imãs diversos para vender e para presentear!</li>
+    </ul>
+
+    <h5 class="subt2_azul">
+        Como fazer - Passo a passo:
+    </h5>
+
+    <p class="intro4">
+        Você ficou curioso e quer saber como se faz esses lindos objetos decorativos e super úteis no dia a dia? Pois então assista agora ao passo a passo preparado especialmente para você! É um artesanato fácil de ser feito e que fica muito barato.
+        <br><br>
+        Confira como colocar em prática essa incrível ideia!
+    </p>
+
+    <iframe class="yt" src="https://www.youtube.com/embed/s-0D0hFPiEw" frameborder="0" width="900" height="400" ></iframe>
+    <p class="fonte3"> INFORMAÇÕES DO ARTESÃO: - Thiago Silva
+        <br>
+        Atelier Rethalho - https://www.facebook.com/RethalhoHandCraft
+        <br>
+        Crédito do tutorial - https://www.revistaartesanato.com.br/porta-recados-magnetico-feito-com-caixa-de-leite
+    </p>
+    <p class="intro4">
+        E então? Ficou babando no trabalho maravilhoso do Thiago, não é mesmo? Então salve esta página no seu favoritos, providencie os materiais (que provavelmente você já tem em casa) e mãos à obra!
+   </p>
+
+   <h5 class="subt2_marrom">
+    5) Prateleira com Paletes
+   </h5>
+
+<img class="img_lixo3" src="prateleira.jpg" >
+<p class="intro2">
+    O uso de paletes de uma forma funcional e decorativa é a tendência mais fresca no ramo de decoração de interiores. O baixo custo deste material permite novas invenções e designs completamente variados e inovadores.
+    <br><br>
+    Além do espírito mais simplista que as decorações estão assumindo, nunca esteve tão presente a necessidade de reutilização e reciclagem de materiais. Sendo assim, os paletes são o colírio para quem deseja não só reciclar este objeto, mas também imprimir um ar mais rústico e funcional a decoração do seu espaço.
+    <br><br>
+    Por que não incluir alguns itens utilizando paletes em sua casa? Seguindo este passo a passo você vai aprender a construir uma prateleira de paletes para você deixar a sua cozinha de cara nova.
+</p>
+<h5 class="subt2_marrom">
+    Materiais Necessários:
+</h5>
+
+<img class="img_lixo2" src="prateleira2.jpg" >
+
+<ul class="lista">
+    <li>Paletes</li>
+    <li>Lápis</li>
+    <li>Serra tico tico</li>
+    <li>Martelo ou pistola de pregos</li>
+    <li>Lixa(Opcional)</li>
+    <li>Pregos</li>
+    <li>Parafusos</li>
+</ul>
+
+<h5 class="subt_marrom">
+    Como fazer
+</h5>
+
+<p class="intro3">
+    1) Primeiramente, planeje o tamanho da sua prateleira e marque com o lápis onde você deseja que o palete seja cortado.
+    <br><br>
+    2) Corte os paletes usando a serra tico tico. Se você não tem experiência com o corte de madeira, peça a algum profissional para fazer isso para você. Este processo deve ser feito com extremo cuidado para evitar acidentes.
+    <br><br>
+    3) Após cortar o palete do tamanho que você havia planejado, irão restar algumas tábuas. Escolha as que estiverem em melhor estado para construir o suporte da sua prateleira.
+    <br><br>
+    4) Usando o martelo ou a pistola de pregos pregue as outras tábuas como base da sua prateleira. Geralmente as pregas em paletes já estarão velhas e gastas, por isso lembre-se de reforçar todas as junções para criar mais suporte para a sua prateleira.
+</p>
+<img class="img_lixo3" src="prateleira3.jpg" >
+<p class="intro3">
+    5) Após pregar as tábuas base, sua prateleira já está pronta e é só fixá-la na parede! Se você achar que a madeira está com a aparência muito velha e suja, você pode usar uma lixa para limpá-la e depois passar tinta da cor que desejar ou um verniz para que fique mais brilhante. Mas o que torna um artigo produzido com paletes tão especial é deixá-lo com a madeira do jeito que foi encontrado. Este é o seu grande diferencial!
+    <br><br>
+    O que você achou deste projeto? Quem aí está louco para também ter uma prateleira como esta em casa?
+</p>
+<p class="fonte2"> Créditos pelo tutorial - https://www.artesanato.com/blog/como-fazer-prateleira-com-paletes/
+    <br>
+    Crédito das fotos: http://diycandy.com/2014/07/make-decorative-pallet-shelf/
+</p>
+
+<header class="baixo">
+    <img class="imagem" src="images.jpg">
+    <h1 class="art_baixo">ARTE DE RECICLAR</h1>
+</header>
+</body>
+</html>

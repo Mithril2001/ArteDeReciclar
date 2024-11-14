@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Arte de Reciclar</title>
+</head>
+    <style>
+        header{
+            flex-direction: row;
+            justify-content:space-around;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            width: 100px;
+            float:left;
+        }
+        .conteiner{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }   
+        .elemento{
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 3px;
+        }
+        .elemento:hover{
+            color: rgb(4, 124, 4);
+            text-decoration:none;
+            font-weight: bold;
+            font-style: italic;
+            background-color: #b5f0c0;
+        }
+        .art{
+            font-size: 20px;
+            text-align: left;
+            color: rgba(6, 167, 6, 0.767);
+            margin-left: -55px;
+            font-family:initial;
+            font-weight: bolder;
+            font-style: oblique;
+        }
+        .titulo{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 46px;
+        text-transform: lowercase;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        color: #007714;
+        margin-top: 30px;
+        width: 500px;
+        }
+        .logos{
+        max-width: 100%;
+        padding-left: 280px;
+        }
+        .topicos{
+        font-size: 30px;
+        color: #255a28;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .exp{
+        margin: 80px;
+        font-size: 20px;
+        padding: 0px;
+        margin-top: -30px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .logos2{
+        margin-top: 90px;
+        vertical-align: middle;
+        border: 0;
+        padding-left: 290px;
+        }
+        .logos3{
+        margin-top: 60px;
+        vertical-align: middle;
+        border: 0;
+        padding-left: 290px;
+        }
+        .logos4{
+        margin-top: 70px;
+        vertical-align: middle;
+        border: 0;
+        padding-left: 290px;
+        }
+        .conteiner2{
+           background-color: #03c226;
+           padding: 1px;
+        }
+        .art2{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family:initial;
+            font-weight: bolder;
+            font-style: oblique;
+        }
+        .topo{
+            text-decoration: none;
+            background-color: rgb(43, 92, 3);
+            color: antiquewhite;
+            padding: 20px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            box-shadow: 3px 3px 10px #b5f0c0;
+            border-radius: 50px;
+        }
+        .art_baixo{
+            font-size: 30px;
+            padding-left: 900px;
+            color: rgba(6, 167, 6, 0.767);
+            font-family:initial;
+            font-weight: bolder;
+            font-style: oblique;
+            padding-top: 50px;
+        }   
+        .imagem{
+            padding-left: 870px;
+            max-width: 80px;
+            padding-top: 20px;
+        }
+        .baixo{
+            justify-content:space-around;
+            box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 450px) {
+            .elemento{
+                margin: 1px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 12px;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-weight: bold;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 1px;
+                padding: 2px;
+            }
+            .art{
+                padding: 28px;
+                font-size: 0px;
+                color: rgba(6, 167, 6, 0.767);
+            }
+            .elemento:hover{
+                font-size: 16px;
+                color: rgb(4, 124, 4);
+                text-decoration:none;
+                font-weight: bold;
+                font-style: italic;
+                background-color: #b5f0c0;
+            }
+            .titulo{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                font-size: 30px;
+                text-transform: lowercase;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                color: #007714;
+                margin-top: 30px;
+                width: 400px;
+            }
+            .logos{
+                padding-left: 20px;
+            }
+            .logos2{
+                padding-left: 20px;
+            }
+            .logos3{
+                padding-left: 20px;
+            }
+            .logos4{
+                padding-left: 20px;
+            }
+            .exp{
+                width: 65%;
+                margin-left:  130px;
+                font-size: 15px;
+                padding: 0px;
+                margin-top: -30px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topicos{
+                font-size: 24px;
+                color: #255a28;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .art_baixo{
+                font-size: 20px;
+                padding-left: 0px;
+                color: rgba(6, 167, 6, 0.767);
+                padding-top: 20px;
+            }   
+            .imagem{
+                padding-left: 0px;
+                max-width: 80px;
+                padding-top: 0px;
+            }
+            .baixo{
+                justify-content:space-around;
+                box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+            }
+        }
+    </style>
+<body>
+    <header>
+        <img src="images.jpg">
+        <div class="conteiner">
+            <h1 class="art">ARTE DE RECICLAR</h1>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="como.html">como reciclar</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="porq.html">por que reciclar?</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="lista.html">lista de materiais reciclaveis</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="exemplo.html">ideias criativas</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="element" <h1> </h1> </a>
+                <br><br><br>
+        </div>
+    </header>
+    <h1 class="titulo">
+        8 motivos para começar a reciclar
+    </h1>
+
+    <div class="logos">
+        <img src="lixo.png" alt="lixo de são paulo">
+    </div>
+
+    <div class="topicos">
+        <h5>1. cidade do lixo</h5>
+    </div>
+
+    <p class="exp">São Paulo é a cidade brasileira que mais produz lixo, na média de 56 mil toneladas todos os dias.</p>
+    
+    <div class="logos2">
+        <img src="dinheiro.png" alt="preco">
+    </div>
+
+    <div class="topicos">
+        <h5>2. mais barato</h5>
+    </div>
+
+    <p class="exp">Com menos custos de matéria prima e até de marketing dos produtos novos, os reciclados podem ser muito mais baratos..</p>
+    
+    <div class="logos3">
+    <img src="ambiente.png" alt="lixo de são paulo">
+    </div>
+
+    <div class="topicos">
+        <h5>3. preserve o meio-ambiente</h5>
+    </div>
+    
+    <p class="exp">Reciclar matéria-prima poupa a extração da natureza e evita que materiais em boa condição encerrem seu ciclo antecipadamente em aterros sanitários.</p>
+
+    <div class="logos4">
+        <img src="decompor.png" alt="lixo de são paulo">
+    </div>
+    
+    <div class="topicos">
+        <h5>4. decomposição</h5>
+    </div>
+        
+    <p class="exp"> Ao jogar as latas de alumínio na natureza, elas podem levar até 500 anos para serem decompostas.</p>
+    
+    <div class="logos4">
+        <img src="comunidade.jpg" alt="lixo de são paulo">
+    </div>
+    
+    <div class="topicos">
+        <h5>5. senso de comunidade</h5>
+    </div>
+        
+    <p class="exp"> Reciclar é um ato que beneficia toda a sociedade, o meio-ambiente e representa o pensamento coletivo. Quem recicla passa a mensagem que quer o bem para toda a comunidade.</p>
+    
+    <div class="logos4">
+        <img src="joia.png" alt="lixo de são paulo">
+    </div>
+    
+    <div class="topicos">
+        <h5> 6. pega bem</h5>
+    </div>
+        
+    <p class="exp"> Quem recicla é bem visto pelos amigos, familiares e vizinhos, por mostrar que está informado e que se importa com as pessoas e o ambiente ao seu redor.</p>
+    
+    <div class="logos4">
+        <img src="educar.png" alt="lixo de são paulo">
+    </div>
+    
+    <div class="topicos">
+        <h5> 7. Educa as crianças</h5>
+    </div>
+        
+    <p class="exp"> O pensamento coletivo transmitido pelo ato de reciclar é um ótimo exemplo para crianças. Elas ainda aprendem a serem mais organizadas com a atividade lúdica de separação dos objetos e exercitam a criatividade construindo brinquedos com materiais recicláveis.</p>
+    
+    <div class="logos4">
+        <img src="industria.jpg" alt="lixo de são paulo">
+    </div>
+    
+    <div class="topicos">
+        <h5> 8. renda na indústria da reciclagem</h5>
+    </div>
+        
+    <p class="exp"> A indústria da reciclagem geral movimenta cerca de R$3 bilhões de reais no Brasil e gera renda para milhares de famílias em todo o país. O destaque é o mercado de papel. Aumentando a reciclagem de outros materiais, é possível transformar vidas.</p>
+
+    <a class="topo" href="#"> &#9650;</a>
+
+    <header class="baixo">
+        <img class="imagem" src="images.jpg">
+        <h1 class="art_baixo">ARTE DE RECICLAR</h1>
+    </header>
+
+</body>
+</html>

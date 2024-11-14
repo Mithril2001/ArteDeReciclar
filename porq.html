@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    header{
+        flex-direction: row;
+        justify-content:space-around;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    img{
+        width: 100px;
+        float:left;
+        } 
+    .elemento{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 3px;
+        }
+    .elemento:hover{
+        color: rgb(4, 124, 4);
+        text-decoration:none;
+        font-weight: bold;
+        font-style: italic;
+        background-color: #b5f0c0;
+        } 
+    .art{
+        font-size: 20px;
+        text-align: left;
+        color: rgba(8, 165, 8, 0.767);
+        margin-left: -55px;
+        font-family:initial;
+        font-weight: bolder;
+        font-style: oblique;
+        }
+    .img_lixo{
+        width: 70%;
+        height: 70%;
+        padding-left: 210px;   
+    }
+    .int{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        padding-left: 11%;
+        color: rgb(10, 10, 10);
+        padding-left: 212px;
+    }
+    .intro{
+        padding-top: 700px;
+        padding-left: 210px;
+        width: 940px;
+        font-size: 23px;
+    }
+    .subt{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        color: rgb(2, 2, 2);
+        padding-left: 210px;
+    }
+    .intro2{
+        padding-left: 210px;
+        font-size: 23px;
+        width: 940px;  
+        }
+    .topo{
+        text-decoration: none;
+        background-color: rgb(43, 92, 3);
+        color: antiquewhite;
+        padding: 20px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        box-shadow: 3px 3px 10px #b5f0c0;
+        border-radius: 50px;
+        }
+    .art_baixo{
+        font-size: 30px;
+        padding-left: 900px;
+        color: rgba(6, 167, 6, 0.767);
+        font-family:initial;
+        font-weight: bolder;
+        font-style: oblique;
+        padding-top: 50px;
+        }   
+    .imagem{
+        padding-left: 870px;
+        max-width: 80px;
+        padding-top: 20px;
+        }
+    .baixo{
+        justify-content:space-around;
+        box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 450px) {
+            .elemento{
+                margin: 1px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 12px;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-weight: bold;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 1px;
+                padding: 2px;
+            }
+            .art{
+                padding: 28px;
+                font-size: 0px;
+                color: rgba(6, 167, 6, 0.767);
+            }
+            .elemento:hover{
+                font-size: 16px;
+                color: rgb(4, 124, 4);
+                text-decoration:none;
+                font-weight: bold;
+                font-style: italic;
+                background-color: #b5f0c0;
+            }
+            .int{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 25px;
+                color: rgb(10, 10, 10);
+                padding-left: 30px;
+                text-align: center;
+            }
+            .img_lixo{
+                width: 80%;
+                height: 80%;
+                padding-left: 12%;   
+            }
+            .intro{
+                padding-top: 60%;
+                padding-left: 30px;
+                width: 90%;
+                font-size: 19px;
+            }
+            .subt{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 21px;
+                color: rgb(2, 2, 2);
+                padding-left: 30px;
+            }
+            .intro2{
+                padding-left: 30px;
+                font-size: 19px;
+                width: 90%;  
+            }
+            .art_baixo{
+                font-size: 20px;
+                padding-left: 0px;
+                color: rgba(6, 167, 6, 0.767);
+                padding-top: 20px;
+            }   
+            .imagem{
+                padding-left: 0px;
+                max-width: 80px;
+                padding-top: 0px;
+            }
+            .baixo{
+                justify-content:space-around;
+                box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+            }
+        }
+</style>
+<body>
+    <header>
+        <a href="index.html">
+        <img src="images.jpg">
+        </a>
+        <div class="conteiner">
+            <h1 class="art">ARTE DE RECICLAR</h1>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="como.html">como reciclar</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="porq.html">por que reciclar?</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="lista.html">lista de materiais reciclaveis</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="elemento" href="exemplo.html">ideias criativas</a>
+            </div>
+            <div>
+                <br><br><br>
+                <a class="element" <h1> </h1> </a>
+                <br><br><br>
+        </div>
+    </header>
+    <h1 class="int">
+        POR QUE É IMPORTANTE RECICLAR O LIXO?
+    </h1>
+    <img class="img_lixo" src="img_lixo.jpg" >
+
+    <p class="intro">
+        A preservação do meio ambiente começa com pequenas atitudes diárias, que podem fazer toda a diferença, e uma das mais importantes é a reciclagem do lixo. São muitas as vantagens da separação do lixo doméstico. Além de diminuir os lixões e aterros sanitários, a maioria dos resíduos não-orgânicos que são gerados em casa pode ser reciclada, o que economiza recursos naturais e gera renda para os catadores de lixo.
+        <br><br>
+        A técnica em Meio Ambiente da Prefeitura de Piên, Cristiane Abuda, afirma que a separação do lixo é fundamental para a conservação do meio ambiente, para a saúde pública e para economia. “Separando corretamente os lixos, economizamos recursos naturais, água e energia; reduzimos a disposição inadequada dos resíduos e aumentamos a vida útil do aterro sanitário para onde são destinados os resíduos gerais coletados em nossa cidade hoje”, explica.
+        <br><br>
+        Ela afirma que, em Piên, há muitos materiais que poderiam ser destinados à reciclagem, gerando renda às famílias que necessitam, e que ainda estão indo para o aterro sanitário. “Temos muitos comércios e moradores que ainda não têm o hábito de separar. Vamos contribuir para a nossa cidade e para a natureza, separando corretamente o lixo orgânico do reciclável. A tarefa é simples e pode trazer uma série de vantagens e benefícios para todos”, destaca Cristiane. “Ao separarmos os nossos resíduos, permitimos que o material reciclável chegue aos catadores e triadores, que separam os resíduos, vendem e transformam em renda.”
+        <br><br>
+        No ano passado, a Prefeitura de Piên investiu R$ 465.637,43 no processo de coleta de lixo, dos quais R$ 40.929,00 foram destinados ao recolhimento de lixos recicláveis e R$ 424.708,43 à coleta de lixo orgânico. No total foram arrecadadas 1.101,69 toneladas de lixo orgânico e 48 toneladas de lixo reciclável em 2017. “Acontece que nem todo resíduo orgânico é realmente orgânico. Muitos lixos que poderiam ser recicláveis são encaminhados ao aterro por não ser feita a correta separação dos materiais”, observa Cristiane.
+    </p> 
+
+    <h5 class="subt">
+        5 fatos que explicam por que é importante reciclar
+    </h5>
+
+    <p class="intro2">
+        Aqui estão cinco fatos que ilustram a importância da reciclagem, com base em relatórios e documentos produzidos pelo Painel Internacional de Recursos (IRP), Banco Mundial, Organização das Nações Unidas (ONU), Fundação Ellen MacArthur, Comissão Econômica para a América Latina e o Caribe (Cepal), Organização Internacional do Trabalho (OIT) e também os especialistas consultados Verónica de la Cerda, da TriCiclos, e Jaime Pon, do Pnuma.
+    </p>
+
+    <h5 class="subt">
+        1. A reciclagem reduz o consumo de recursos naturais
+    </h5>
+
+    <p class="intro2">
+        Nas últimas cinco décadas, a população mundial dobrou, o produto interno bruto quadruplicou e a extração anual de matérias-primas aumentou de 27 bilhões de toneladas para 92 bilhões de toneladas, de acordo com o relatório Global Resource Prospects, publicado em 2019 pelo IRP. 
+        <br><br>
+        Ou seja, a extração de recursos triplicou desde 1970. Especificamente, o uso de minerais não-metálicos quintuplicou, e o uso de combustíveis fósseis aumentou em 45%.
+        <br><br>
+        Diante da crescente exploração dos recursos naturais, Pon argumenta que a reciclagem de materiais é uma oportunidade para aliviar a pressão sobre a natureza. "Transformando materiais que são descartáveis e dando-lhes uma segunda chance em seu ciclo de vida, reduzimos a extração dos recursos naturais e, portanto, contribuímos para o primeiro R, ou seja, para reduzir", diz Pon, referindo-se aos três Rs da economia circular: reduzir, reutilizar e reciclar.
+        <br><br>
+        "Não temos espaço infinito, nem a capacidade de absorver emissões no mundo para poder sustentar o modelo de descarte de produtos", diz de la Cerda, da TriCiclos. "Portanto, o que precisamos é que os recursos que extraímos durem e circulem nas cadeias de produção o máximo de tempo possível antes de decidirmos que não podem mais ser utilizados."
+    </p>
+
+    <h5 class="subt">
+        2. A reciclagem pode reduzir as emissões de CO2 e diminuir o aquecimento global
+    </h5>
+
+    <p class="intro2">
+        Cientistas de todo o mundo alertam há décadas sobre o perigo do aquecimento global e das mudanças climáticas provocadas pelo aumento das emissões de gases de efeito estufa (GEE).
+        <br><br>
+        O relatório do IRP adverte que a extração e o processamento de materiais, combustíveis e alimentos contribuem com metade das emissões de GEE.
+        <br><br>
+        Das emissões globais de CO2, a indústria é responsável por aproximadamente 21%, e a produção de apenas quatro materiais (cimento, aço, plástico e alumínio) responde a 60% dessas emissões, segundo o relatório Completando a figura: como a economia circular ajuda a enfrentar a mudança climática, publicado em 2019 pela Fundação Ellen MacArthur.
+        <br><br>
+        No documento, especialistas argumentam que a implementação de um modelo de economia circular em todo o planeta poderia reduzir as emissões globais de CO2 na área de materiais de construção em 38%, de acordo com as projeções para o ano 2050. Isso equivale a uma redução de 2 bilhões de toneladas de CO2, devido a uma diminuição na demanda de aço, alumínio, cimento e plástico. 
+        <br><br>
+        Assim, a reciclagem contribui para reduzir as emissões de GEE, evitando a produção de novo material e o tratamento em fim de vida útil, como a incineração e o aterro sanitário.
+        <br><br>
+        O relatório observa ainda que as atividades de reciclagem requerem menos energia do que a produção de materiais virgens. Por exemplo, a reciclagem do aço utiliza 10-15% da energia necessária na produção de aço primário.
+        <br><br>
+        Além disso, a reciclagem de uma única tonelada de plástico poderia reduzir as emissões entre 1,1 e 3 toneladas de CO2, em comparação com a produção da mesma quantidade de plástico a partir de matéria-prima fóssil.
+        <br><br>
+        "A reciclagem não só reduz as emissões do uso de energia, mas também os processos de produção, que são as emissões mais difíceis de serem enfrentadas", conclui o relatório.
+    </p>
+
+    <h5 class="subt">
+        3. O fim do desperdício de alimentos poderia reduzir as emissões de CO2 em 49%
+    </h5>
+
+    <p class="intro2">
+        O equivalente a seis caminhões carregados de resíduos alimentares comestíveis são jogados fora a cada segundo no mundo, e a maior parte acaba em aterros sanitários, onde é liberado metano à medida em que o lixo se decompõe, como explica o documento da Fundação Ellen MacArthur.
+        <br><br>
+        "Quando falamos de reciclagem, muitas vezes pensamos em papel, vidro ou metal, mas na América Latina e no Caribe, os resíduos orgânicos representam 50% do total de descarte gerado", diz Jaime Pon, do Pnuma. "Se conseguirmos garantir que uma parte desses resíduos não vá parar no circuito de coleta, beneficiaremos o planeta.”
+        <br><br>
+        Adotando um modelo de economia circular, que inclui a compostagem (uma forma de reciclagem), "as emissões poderiam ser reduzidas em 5,6 bilhões de toneladas de CO2, o que corresponde a uma diminuição de 49% das emissões totais projetadas do sistema alimentar em 2050", segundo o documento da Fundação Ellen MacArthur.
+    </p>
+
+    <h5 class="subt">
+        4. As lixeiras abertas poluem o solo e a água, além de causar doenças
+    </h5>
+
+    <p class="intro2">
+        Pon estima também que 50% dos resíduos acabam em lugares errados e, desses, cerca de 25% vão parar em lixões abertos ou aterros sanitários. "[Ao reciclar], impedimos que o material vindo da natureza volte a ela de uma forma que não pertence a ela", diz Verónica de la Cerda, da TriCiclos.
+        <br><br>
+        Esse problema global não é estranho à região. "Identificamos mais de 10 mil aterros sanitários na América Latina e no Caribe, os quais contaminam o solo, a água e as populações vizinhas", enfatizou Pon.
+        <br><br>
+        Esses aterros podem conter milhões de toneladas de resíduos e ocupar mais de 100 hectares, de acordo com um artigo das Nações Unidas. A reciclagem ajuda a neutralizar essa situação e, consequentemente, melhorar a qualidade de vida das pessoas e do planeta.
+    </p>
+
+    <h5 class="subt">
+        5. A reciclagem gera empregos e melhora as condições de trabalho
+    </h5>
+    <p class="intro2">
+        Um relatório conjunto da Divisão de Desenvolvimento Econômico da Cepal e do Escritório da OIT para o Cone Sul da América Latina abordou a relação entre reciclagem e emprego, dentro de uma estrutura mais ampla. "A evolução para uma economia circular – na qual a eficiência e a vida útil dos materiais é melhorada, promovendo a durabilidade e a capacidade de reparo, remanufatura, reutilização e reciclagem – geraria 4,8 milhões de empregos líquidos até 2030", diz o documento.
+        <br><br>
+        Isso é possível porque a criação de empregos nos setores de reprocessamento de aço, alumínio, madeira e outros metais mais do que compensará as perdas de empregos associadas com a extração de minerais e outros materiais, esclarece o relatório.
+        <br><br>
+        Isso é possível porque a criação de empregos nos setores de reprocessamento de aço, alumínio, madeira e outros metais mais do que compensará as perdas de empregos associadas com a extração de minerais e outros materiais, esclarece o relatório.
+        <br><br>
+        Entretanto, esse número aumenta se considerarmos o que a OIT chamou de empregos verdes, que inclui setores como eficiência energética, energia renovável, transporte e mobilidade sustentável.
+        <br><br>
+        Se essas áreas de trabalho forem somadas, a OIT estima que 15 milhões de novos empregos poderiam ser gerados na região. Deve-se ter em mente que esses números cobrem apenas o chamado Cone Sul latino-americano (Argentina, Brasil, Chile, Paraguai e Uruguai). Portanto, os números seriam ainda mais altos quando levado em conta toda a América Latina e o Caribe.
+        <br><br>
+        Entretanto, não se trata apenas de gerar emprego, mas também de proteger os trabalhadores. A OIT adverte em outro relatório que a degradação ambiental ameaça empregos e piora as condições de trabalho, especialmente entre as pessoas mais vulneráveis do mundo. "A sustentabilidade ambiental é uma questão de justiça social", afirma o documento.
+    </p>
+    <a class="topo" href="#"> &#9650;</a>
+
+    <header class="baixo">
+        <img class="imagem" src="images.jpg">
+        <h1 class="art_baixo">ARTE DE RECICLAR</h1>
+    </header>
+
+</body>
+</html>

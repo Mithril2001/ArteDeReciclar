@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    header{
+        flex-direction: row;
+        justify-content:space-around;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    img{
+        width: 100px;
+        float:left;
+    } 
+    .elemento{ 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .elemento:hover{
+        color: rgb(4, 124, 4);
+        text-decoration:none;
+        font-weight: bold;
+        font-style: italic;
+        background-color: #b5f0c0;
+    } 
+    .art{
+        font-size: 20px;
+        text-align: left;
+        color: rgba(8, 165, 8, 0.767);
+        margin-left: -55px;
+        font-family:initial;
+        font-weight: bolder;
+        font-style: oblique;
+    }
+    .title{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        background-color: rgb(24, 170, 5);
+        padding: 40px;
+        color: rgb(238, 241, 237);
+        font-size: 50px;
+    }
+    .intro{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 23px;
+        width: 80%;
+        text-align: left;
+        padding-left: 11%;
+    }
+    .tit{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        padding-left: 11%;
+        color: rgb(69, 116, 51);
+    }
+    .composteira{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(5, 5, 4);
+        font-size: 30px;
+        text-align: left;
+        padding-left: 11%;
+    }
+    .topo{
+        text-decoration: none;
+        background-color: rgb(43, 92, 3);
+        color: antiquewhite;
+        padding: 20px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        box-shadow: 3px 3px 10px #b5f0c0;
+        border-radius: 50px;
+    }
+    .art_baixo{
+        font-size: 30px;
+        padding-left: 900px;
+        color: rgba(6, 167, 6, 0.767);
+        font-family:initial;
+        font-weight: bolder;
+        font-style: oblique;
+        padding-top: 50px;
+        }   
+    .imagem{
+        padding-left: 870px;
+        max-width: 80px;
+        padding-top: 20px;
+        }
+    .baixo{
+        justify-content:space-around;
+        box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 450px) {
+            .elemento{
+                margin: 1px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 12px;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-weight: bold;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 1px;
+                padding: 2px;
+            }
+            .art{
+                padding: 28px;
+                font-size: 0px;
+                color: rgba(6, 167, 6, 0.767);
+            }
+            .elemento:hover{
+                font-size: 16px;
+                color: rgb(4, 124, 4);
+                text-decoration:none;
+                font-weight: bold;
+                font-style: italic;
+                background-color: #b5f0c0;
+            }
+            .title{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                background-color: rgb(24, 170, 5);
+                padding: 20px;
+                color: rgb(238, 241, 237);
+                font-size: 30px;
+            }
+            .intro{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 18px;
+                width: 85%;
+                text-align: left;
+                padding-left: 11%;
+            }
+            .tit{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 22px;
+                padding-left: 11%;
+                color: rgb(69, 116, 51);
+            }
+            .composteira{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(5, 5, 4);
+                font-size: 20px;
+                text-align: left;
+                padding-left: 11%;
+            }
+            .art_baixo{
+                font-size: 20px;
+                padding-left: 0px;
+                color: rgba(6, 167, 6, 0.767);
+                padding-top: 20px;
+            }   
+            .imagem{
+                padding-left: 0px;
+                max-width: 80px;
+                padding-top: 0px;
+            }
+            .baixo{
+                justify-content:space-around;
+                box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+</style>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images.jpg">
+        </a>
+        <div class="conteiner">
+            <h1 class="art">ARTE DE RECICLAR</h1>
+            <div>
+            <br><br><br>
+            <a class="elemento" href="como.html">como reciclar</a>
+        </div>
+
+        <div>
+            <br><br><br>
+            <a class="elemento" href="porq.html">por que reciclar?</a>
+        </div>
+
+        <div>
+            <br><br><br>
+            <a class="elemento" href="lista.html">lista de materiais reciclaveis</a>
+        </div>
+
+        <div>
+            <br><br><br>
+            <a class="elemento" href="exemplo.html">ideias criativas</a>
+        </div>
+
+        <div>
+            <br><br><br>
+            <a class="element" <h1> </h1> </a>
+            <br><br><br>
+        </div>
+    </header>
+    <h1 class="title">
+        COMO RECICLAR O LIXO CORRETAMENTE?
+    </h1>
+
+    <p class="intro">
+        Com os recursos naturais cada vez mais escassos e a geração de resíduos aumentando, a discussão sobre a reciclagem de lixo deve acontecer com a maior frequência possível. A conscientização da população é o primeiro passo para construirmos um mundo cada vez mais sustentável. Aqui, você encontrará tudo sobre como reciclar seu lixo de maneira correta.
+    </p>
+
+    <h1 class="tit">
+        UM CONTEXTO SOBRE RECICLAGEM NO BRASIL
+    </h1>
+
+    <p class="intro">
+        Desde 2010, nosso país conta com a Política Nacional de Resíduos Sólidos – PNRS, que exige, entre outras coisas, que as prefeituras implantem sistemas de coleta seletiva e que as empresas criem políticas de logística reversa (ou seja, fiquem responsáveis por coletar e encaminhar seus produtos pós-consumo para a reciclagem adequada).
+        De acordo com a pesquisa Ciclosoft 2016, divulgada pela organização Compromisso Empresarial para Reciclagem (Cempre), a comparação ano a ano mostra que a reciclagem no Brasil está avançando, ainda que a passos lentos. O estudo é feito desde 1994 e mostrou, também, que a partir de 2010 houve aumento de mais de 100% na quantidade de municípios que reciclam – exatamente por conta da PNRS.
+        Mesmo com estes aumentos ano a ano a reciclagem no Brasil ainda está bem longe do ideal. Apenas 1.055 municípios brasileiros possuem programas de coleta seletiva, e, como nosso país possui mais de 5 mil cidades, esse número evidencia que apenas 18% dos municípios podem contar com a reciclagem de seus resíduos.
+        Os dados são ainda mais desanimadores quando são analisados os números de brasileiros atendidos pelos programas: apenas 31 milhões, cerca de 15% da população do país. Isto significa que 85% dos brasileiros não conseguem contribuir com o aumento do percentual de reciclagem no país e mostra que há, ainda, bastante trabalho a ser feito no setor.
+    </p>
+
+    <h1 class="tit">
+        COMO PODEMOS RECICLAR O LIXO EM NOSSAS CASAS?
+    </h1>
+
+    <p class="intro">
+        Mesmo com o grande debate acerca da reciclagem, grande parte da população ainda joga restos de comida, plástico, papéis, alumínio e demais resíduos no mesmo saco plástico quando vão fazer o descarte do lixo em suas casas. Esta atitude, porém, é extremamente prejudicial ao meio ambiente.
+        Isso porque ao jogar tudo no mesmo saco plástico e depositar na lixeira de seu condomínio ou de um ponto de coleta, esse conteúdo acaba indo parar nos aterros sanitários.
+        O aterro sanitário é um local destinado à decomposição final de resíduos sólidos gerados pela atividade humana. Mas nem tudo deve ir parar lá. Isso porque muitos resíduos demoram anos e até séculos para se decompor, ocupando espaço e, muitas vezes, liberando gases tóxicos na atmosfera, contribuindo para a poluição do ar e para o efeito estufa.
+        As informações encontradas sobre o tempo de decomposição de diversos materiais são distintas, porém, é possível ter uma noção básica. Veja abaixo o que diz o portal de pesquisa escolar São Francisco:
+    </p>
+    <div class="intro">
+        <ul>
+            <li>Cascas de frutas - de 1 a 3 meses</li>
+            <li>Papel - 03 a 06 meses</li>
+            <li>Pano - de 6 meses a 1 ano</li>
+            <li>Chiclete - 05 anos</li>
+            <li>Filtro de cigarro - de a 10 anos</li>
+            <li>Tampa de garrafa - 15 anos</li>
+            <li>Madeira pintada - 15 anos</li>
+            <li>Náilon - mais de 30 anos</li>
+            <li>Sacos plásticos - de 30 a 40 anos</li>
+            <li>Lata de conserva - 100 anos</li>
+            <li>Latas de alumínio - 200 anos</li>
+            <li>Plástico - 450 anos</li>
+            <li>Fralda descartável - 600 anos</li>
+            <li>Garrafas de vidro - indeterminado</li>
+            <li>Pneu - indeterminado</li>
+            <li>Garrafas de plástico (PET) - indeterminado</li>
+            <li>Borracha - indeterminado</li>
+            <li>Vidro - 1 milhão de anos</li>
+        </ul>
+    </div>
+
+        <h1 class="tit">
+            RECICLAGEM DE LIXO, COMO FAZER?
+        </h1>
+
+        <p class="intro">
+            A forma mais simples de fazer a reciclagem de lixo doméstico consiste em separar seus resíduos em duas categorias: recicláveis e não recicláveis. Para isto, basta depositar os lixos em duas sacolas diferentes. É uma ótima ideia que não requer muito esforço.
+        </p>
+
+        <h1 class="tit">
+            LIXO RECICLÁVEL
+        </h1>
+
+        <p class="intro">
+            O lixo reciclável engloba papéis (papelão, jornal, etc.), plásticos, metais e vidros. Cartelas de comprimidos e bandejas de isopor também devem ser descartadas com o lixo seco, pois podem se transformar em matéria-prima para blocos da construção civil.
+            É importante lembrar que as embalagens plásticas devem ser deixadas secas, as caixas de papelão dobradas (para economizar espaço) e os vidros embalados em jornal ou papelão, pois caso estejam quebrados não machucarem quem os manusear. Os papéis podem ser dobrados, porém, não devem estar amassados.
+        </p>
+
+        <h1 class="tit">
+            E O LIXO ELETRÔNICO?
+        </h1>
+
+        <p class="intro">
+        O lixo eletrônico (pilhas, baterias, celulares e demais eletrônicos) e as lâmpadas devem ser encaminhados para pontos específicos de coleta. No caso de pilhas e baterias de celular, estas podem ser devolvidas diretamente aos fabricantes, basta entrar em contato com as empresas. Unidades de grandes redes de supermercados também possuem estrutura para receber o descarte desses produtos.
+        </p>
+
+        <h1 class="tit">
+            LIXO ÚMIDO OU ORGÂNICO
+        </h1>
+
+        <p class="intro">
+            O lixo úmido ou lixo orgânico, é composto de materiais orgânicos (cascas de frutas e legumes, folhas e restos de comida) e não recicláveis (papel higiênico utilizado, materiais de higiene pessoal, plásticos e papéis engordurados, bitucas de cigarro, chiclete, etc.). Ele representa aproximadamente 50% de todo o lixo produzido diariamente por cada brasileiro.
+        </p>
+
+        <h1 class="tit">
+            RECICLAGEM PASSO A PASSO: COMO RECICLAR O LIXO ORGÂNICO
+        </h1>
+
+        <p class="intro">
+            Você sabia que pode contribuir ainda mais com o meio ambiente ao reciclar seu lixo orgânico? Sim, os materiais orgânicos que você joga fora em casa (cascas de frutas e de ovos, iogurte e sementes, por exemplo), podem ser utilizados na criação de adubo natural para suas plantas.
+            <br>
+            <br>
+            Este processo é chamado de compostagem e pode ser definido como a reciclagem de matéria orgânica. Seu objetivo é diminuir o impacto nos aterros sanitários, onde toda a matéria vira gás metano, prejudicial quando depositado no solo ou liberado na atmosfera, como já comentamos. Uma alternativa simples e que pode ser feita em casa.
+        </p>
+
+        <h1 class="tit">
+            COMO RECICLAR O LIXO ORGÂNICO USANDO SUA PRÓPRIA COMPOSTEIRA
+        </h1>
+
+        <h5 class="composteira">
+            1. Separe todos os resíduos orgânicos
+        </h5>
+        <p class="intro">
+            Podem ser cascas de ovo, iogurte, cascas de frutas e sementes. Alimentos como queijo, carne, alho e arroz não são recomendados por atrair pragas, estragando o adubo que será gerado.
+        </p>
+
+        <h5 class="composteira">
+            2. Escolha os recipientes
+        </h5>
+        <p class="intro">
+            Não é necessário comprar utensílios específicos. Podem ser dois baldes ou dois recipientes fundos que comportem o quanto de material orgânico você deseja reutilizar e que, de preferência, se encaixem, deixando espaço entre eles.
+        </p>
+
+        <h5 class="composteira">
+            3. Escolha o lugar
+        </h5>
+        <p class="intro">
+            A composteira não pode estar em contato direto com sol, chuva e vento. O ideal é que fique em um local arejado e coberto.
+        </p>
+
+        <h5 class="composteira">
+            4. Elabore sua composteira
+        </h5>
+        <p class="intro">
+            Escolha o recipiente que ficará por cima e faça furos embaixo dele. Por esses furos que o chorume irá sair. Lembrando que, como ele foi gerado de maneira natural e limpa, também pode ser reaproveitado como biofertilizante na proporção de um litro de chorume para 10 litros de água. Encaixe os dois baldes e insira camadas na parte de cima.
+            <br>
+            <br>
+            As camadas são alternadas entre folhas secas (ou serragem, aparas de grama, restos de madeira) e material orgânico. A proporção é de duas camadas secas para uma de matéria orgânica. O processo da compostagem ocorre com mais eficiência se tudo for picado. A última camada precisa ser de folhas secas para impedir que insetos sejam atraídos. Não feche a composteira. Desta forma, ela pode gerar gás metano, que é prejudicial para as plantas.
+        </p>
+
+        <h5 class="composteira">
+            5. Não mexa por, no mínimo, 15 dias
+        </h5>
+        <p class="intro">
+            É necessário um tempo para que a composteira comece a funcionar, pois é preciso atingir um certo nível de calor para que as bactérias passem a decompor todo o alimento (pode chegar a 70 graus). Caso não aconteça, observe se precisa regar um pouco ou se a quantidade de folhas secas é maior do que a de matéria orgânica. Mas, durante 15 dias, não mexa na composteira. Depois desse tempo, o ideal é revirar todo o material, para que ele seja oxigenado. O adubo estará pronto quando todo o material estiver de cor marrom escuro e com cheiro de terra fresca.
+        </p>
+        <a class="topo" href="#"> &#9650;</a>
+
+        <header class="baixo">
+            <img class="imagem" src="images.jpg">
+            <h1 class="art_baixo">ARTE DE RECICLAR</h1>
+        </header>
+    
+
+</body>
+</html>
